@@ -31,6 +31,11 @@ app.use('/api/auth', authRoutes);
 app.use('/api/designs', designRoutes);
 
 const PORT = process.env.PORT || 5000;
+
+app.get("/", (req, res) => {
+  res.send("✅ Backend is live and running on Render!");
+});
+
 app.listen(PORT, () => console.log('Server started on', PORT));
 // console.log("S3 Bucket:", process.env.AWS_S3_BUCKET);
 
