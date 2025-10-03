@@ -9,7 +9,11 @@ const authRoutes = require('./routes/auth');
 const designRoutes = require('./routes/designs');
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+  origin: 'https://gncipl-major-project.vercel.app', // Your Vercel frontend URL
+  optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
 
 // Increase body size limit
 app.use(express.json({ limit: '10mb' }));

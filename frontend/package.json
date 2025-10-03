@@ -48,6 +48,7 @@
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.6.0",
     "fabric": "^6.4.3",
+    "fabric-history": "^2.0.0",
     "firebase": "^12.3.0",
     "firebase-admin": "^13.5.0",
     "img": "^3.0.3",
