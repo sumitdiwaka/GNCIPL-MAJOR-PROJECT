@@ -63,7 +63,7 @@ npm run dev   # (requires nodemon)
 ```
 
 Server runs by default at:  
-👉 http://localhost:5000  
+👉 ${API_URL}  
 
 ---
 

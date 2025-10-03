@@ -61,7 +61,7 @@ export default function Dashboard() {
         return;
       }
 
-      const res = await fetch(`http://localhost:5000/api/designs/${id}`, {
+      const res = await fetch(`${API_URL}/api/designs/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -84,7 +84,7 @@ export default function Dashboard() {
 
   const UserProfile = () => {
     const user = authUser?.user;
-    const profileImageUrl = user?.profileImage ? `http://localhost:5000/${user.profileImage.replace(/\\/g, "/")}` : user?.googleProfileImage || null;
+    const profileImageUrl = user?.profileImage ? `${API_URL}/${user.profileImage.replace(/\\/g, "/")}` : user?.googleProfileImage || null;
 
     return (
       <div className="flex items-center space-x-4">

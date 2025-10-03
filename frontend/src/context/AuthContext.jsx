@@ -50,7 +50,7 @@
 //     const fetchDesigns = async () => {
 //       if (!authUser?.token) return;
 //       try {
-//         const res = await fetch("http://localhost:5000/api/designs", {
+//         const res = await fetch("${API_URL}/api/designs", {
 //           headers: { Authorization: `Bearer ${authUser.token}` },
 //         });
 //         if (!res.ok) return;
@@ -69,7 +69,7 @@
 //     const syncUser = async () => {
 //       if (!authUser?.token) return;
 //       try {
-//         const res = await fetch("http://localhost:5000/api/auth/sync", {
+//         const res = await fetch("${API_URL}/api/auth/sync", {
 //           method: "POST",
 //           headers: {
 //             "Content-Type": "application/json",
